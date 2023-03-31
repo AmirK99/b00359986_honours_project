@@ -15,3 +15,7 @@ Requirements for running this project:
         IF RUNNING ON A PHYSICAL DEVICE:
         Please make sure your device's own Dark Mode is switched off as this can interfere with the 
         theme and colours of the application!
+        
+        
+        To access the SQLite Database file please download DB Broswer for SQLite
+        using this link https://sqlitebrowser.org/dl/
