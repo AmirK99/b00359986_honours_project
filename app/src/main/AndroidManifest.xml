@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher_logo"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.Formula1FanApplication"
+        tools:targetApi="31">
+        <activity
+            android:name=".UpdateConstructor"
+            android:exported="false"
+            android:parentActivityName=".ConstructorResults"/>
+        <activity
+            android:name=".AddConstructor"
+            android:exported="false"
+            android:label="Add Constructor"
+            android:parentActivityName=".ConstructorResults" />
+        <activity
+            android:name=".ConstructorResults"
+            android:exported="false"
+            android:label="Constructor Standings" />
+        <activity
+            android:name=".Rules"
+            android:exported="false"
+            android:label="Rules and Regulations" />
+        <activity
+            android:name=".News"
+            android:exported="false"
+            android:label="News" />
+        <activity
+            android:name=".UpdateDriverResults"
+            android:exported="false"
+            android:parentActivityName=".DriverResults" />
+        <activity
+            android:name=".AddDriver"
+            android:exported="false"
+            android:label="Add Driver"
+            android:parentActivityName=".DriverResults" />
+        <activity
+            android:name=".DriverResults"
+            android:exported="false"
+            android:label="Driver Standings" />
+        <activity
+            android:name=".UpdateScheduleActivity"
+            android:exported="false"
+            android:parentActivityName=".Schedule" />
+        <activity
+            android:name=".AddRaceToScheduleActivity"
+            android:exported="false"
+            android:label="Add Book"
+            android:parentActivityName=".Schedule" />
+        <activity
+            android:name=".Preferences"
+            android:label="Preferences"
+            android:exported="false"
+            android:parentActivityName=".Schedule"/>
+        <activity
+            android:name=".Schedule"
+            android:exported="true"
+            android:label="Schedule">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

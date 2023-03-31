@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Rules"
+    android:id="@+id/rulesConstraintLayout">
+
+
+    <Button
+        android:id="@+id/sportingRegsButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/light_mode_red"
+        android:text="@string/sportingRegsButton"
+        android:textSize="12dp"
+        app:layout_constraintBottom_toTopOf="@+id/financialRegsButton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/financialRegsButton"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.45"
+        android:layout_marginHorizontal="12dp"/>
+
+    <Button
+        android:id="@+id/financialRegsButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:background="@color/light_mode_red"
+        android:text="@string/financialRegsButton"
+        android:textSize="12dp"
+        app:layout_constraintBottom_toTopOf="@+id/technicalRegsButton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/sportingRegsButton"
+        android:layout_marginHorizontal="12dp"/>
+
+    <Button
+        android:id="@+id/technicalRegsButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/light_mode_red"
+        android:text="@string/technicalRegsButton"
+        android:textSize="12dp"
+        app:layout_constraintBottom_toTopOf="@+id/bottom_navigator"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/financialRegsButton"
+        app:layout_constraintTop_toBottomOf="@+id/financialRegsButton"
+        android:layout_marginHorizontal="12dp"/>
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottom_navigator"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        app:itemBackground="@color/light_mode_red"
+        app:itemIconTint="@drawable/selector"
+        app:itemTextColor="@drawable/selector"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:menu="@menu/bottom_nav_menu" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

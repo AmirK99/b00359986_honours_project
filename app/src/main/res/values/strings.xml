@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">Formula 1 Fan-Application</string>
+    <string name="sportingRegsButton">2023 Sporting Regulations.PDF</string>
+    <string name="financialRegsButton">2023 Financial Regulations.PDF</string>
+    <string name="technicalRegsButton">2023 Technical Regulations.PDF</string>
+    <string name="messages_header">Messages</string>
+    <string name="signature_title">Your Signature</string>
+    <string name="reply_title">Default reply action</string>
+    <string name="sync_header">Sync</string>
+    <string name="sync_title">Sync email periodically</string>
+</resources>
