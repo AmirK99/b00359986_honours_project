@@ -54,7 +54,7 @@
         <activity
             android:name=".AddRaceToScheduleActivity"
             android:exported="false"
-            android:label="Add Book"
+            android:label="Add Race"
             android:parentActivityName=".Schedule" />
         <activity
             android:name=".Preferences"
