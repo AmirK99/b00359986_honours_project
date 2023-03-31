@@ -12,3 +12,6 @@ Requirements for running this project:
         Source Compatibility Java Version 1.8 (Java 8)
         Target Compatibility Java Version 1.8 (Java 8)
         
+        IF RUNNING ON A PHYSICAL DEVICE:
+        Please make sure your device's own Dark Mode is switched off as this can interfere with the 
+        theme and colours of the application!
